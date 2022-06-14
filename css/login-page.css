@@ -1,0 +1,205 @@
+/* 
+
+Created between June2021 - July2021
+* JAGADEESH KOPPULA (N170142)
+* ANAND PRASAD B (N170049)
+* UDAY KIRAN P (N170019)
+
+*/
+
+/* ====== GOOGLE FONTS ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+/* ====== CSS VARIABLES START ====== */
+
+:root{
+
+    /* ------ COLORS ------ */
+
+    --form-color-title :rgb(100, 98, 96);
+    --form-color-bg : white;
+    --form-color-btn : rgb(255, 145, 0);
+    --form-color-btn-text:white;
+    --form-color-input-field-border:grey;
+    --form-color-label: black;
+    --form-color-link:rgb(0, 140, 255);
+    --form-color-border:rgb(80, 79, 79);
+
+    /* ------ FONT SIZES ------ */
+
+    --form-font-title : 2em;
+    --form-font-inputfield : 1em;
+    --form-font-label : 1em;
+    --form-font-btn : 0.9 em;
+    --form-font-bottom : 0.9em;
+
+    /*------MOBILE VIEW FONTS ------*/
+    --form-mobile-font-title : 1.5em;
+    --form-mobile-font-inputfield : 0.9em;
+    --form-mobile-font-label : 0.85em;
+    --form-mobile-font-btn : 0.9 em;
+    --form-mobile-font-bottom : 0.9em;
+
+
+    /* ------ FONT WEIGHTS ------ */
+    --form-first-weight : 500;
+    --form-second-weight :400;
+    --form-third-weight : 300;
+
+}
+
+.form-layer{
+    padding-top: 5vh ;
+    padding-bottom: 10vh;
+    background-color: var(--fourth-color);
+}
+
+.form{
+    margin : 105px auto 15px; 
+    height : auto;
+    width : 420px;
+    padding : 20px;
+    box-sizing: border-box;
+    background-color : var(--form-color-bg);
+    border-radius: 10px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70,0.12);
+}
+
+.form-title{
+    font-size : var(--form-font-title);
+    color : var(--form-color-title);
+    text-align : center;
+    margin : 20px auto 40px;
+}
+
+.form label{
+    font-size : var(--form-font-label);
+    font-weight : var(--form-second-weight);
+    color : var(--form-color-label);
+}
+
+
+input[type=email], input[type=password], input[type=text]{
+    width : 100%;
+    margin : 10px auto 30px;
+    border-top :0;
+    border-left : 0;
+    border-right : 0;
+    border-bottom : 1px solid var(--form-color-input-field-border);
+    background : transparent;
+    position : relative;
+    outline : none;
+    overflow : hidden;
+    padding: 5px;
+    font-size:var(--form-font-inputfield);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(63, 59, 52);
+ 
+}
+
+.form span{
+    position: relative;
+    margin-left: 8px;
+    color:#7a797e;  
+}
+
+.submit-btn{
+    display : flex;
+    justify-content : center;
+    padding : 5px;
+    font-size : var(--form-font-btn);
+    color :var(--form-color-btn-text);
+    margin : 40px auto;
+    width : 40%;
+    height : 30px;
+    border-radius : 10px;
+    background : transparent;
+    border : 0;
+    background : var(--form-color-btn);
+    box-shadow : 0 0 2px 0 #cc541c;
+    cursor : pointer;
+    
+}
+
+
+/*=====FORM CHANGING ANIMATIONS=====*/
+
+.transition{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+} 
+
+
+/*=====BOTTOM TEXT IN THE FORM=====*/
+
+.form-layer p{
+    text-align : center;
+    padding : 5px;
+}
+
+.form-layer p a{
+    font-size : var(--form-font-bottom);
+    color :var(--form-color-link);
+}
+
+.form-layer p a:hover{
+    color: orange;
+}
+
+.pss{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-eye{
+    font-size: 18px;
+    position: absolute;
+    pointer-events: all;
+    right: 10px;
+    z-index: 3;
+    margin-top:30px;
+}
+
+/*=====RESPONSIVE IN MOBILE=====*/
+
+@media  only screen and (max-width:600px) {    
+    .form{
+        width : 90%;
+        margin : 120px auto 15px;
+    }
+
+    .form-title{
+        font-size : var(--form-mobile-font-title);
+        margin : 5px auto 30px;
+    }
+
+    .form label{
+        font-size : var(--form-mobile-font-label);
+        font-weight : var(--form-second-weight);
+    }
+
+    input[type=email], input[type=password], input[type=text]{
+        margin : 5px auto 25px;
+        font-size:var(--form-mobile-font-inputfield);
+    }
+
+    .form-layer p{
+        font-size : var(--form-mobile-font-bottom);
+    }
+
+}

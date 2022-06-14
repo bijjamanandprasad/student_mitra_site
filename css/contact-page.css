@@ -1,0 +1,229 @@
+
+/* =====CONTACT PAGE START=====*/
+
+.contact-container {
+    width: 70%;
+    height: 80vh;
+    margin-top: 110px;
+    margin-left: 25%;
+    background-color:white;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70,0.12);
+    border-radius: 20px;
+}
+
+.contact-form {
+    width: 75%;
+    float: right;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.contact-form h1{
+    margin: 10px auto 25px;
+    color: grey;
+}
+
+.contact-form label {
+    font-size: 0.9em;
+    font-weight: 400;
+
+}
+
+.contact-form input[type=text],
+.contact-form input[type=name],
+.contact-form textarea {
+    width: 100%;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    outline:none;
+    border-bottom: 2px solid grey;
+    padding: 5px;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 150px;
+    outline:none;
+    border: 2px solid grey;
+    padding: 5px;
+    margin: 15px auto;
+}
+
+.contact-form button {
+    height: 40px;
+    width : 120px;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    background-color: orange;
+}
+
+.card {
+    height: 70vh;
+    width: 25%;
+    top:140px;
+    position: absolute;
+    padding: 25px;
+    margin-left: 12.5%;
+    background-image: linear-gradient(145deg, #bbd4f8 , #ffffff);
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70,0.12);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h1 {
+    font-size: 1.8 em;
+    font-weight: 600;
+    color: rgb(14, 26, 82);
+    margin-bottom: 30px;
+    
+}
+
+.card .contact-info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .contact-info ul li {
+    margin: 8px 0;
+    color: black;
+}
+
+.card .contact-info ul li a {
+    font-size: 1.1em;
+    color: black;
+}
+
+.card .contact-info ul li a:hover,
+.card .contact-info ul li a:hover i {
+    color: orange;
+}
+
+.fa {
+    height: 35px;
+    width: 35px;
+    font-weight: 300;
+    color: rgb(14, 26, 82)
+}
+
+.card-social-icons .fa {
+    font-size: 25px;
+    color:rgb(29, 27, 27);
+}
+
+.card .card-social-icons {
+    display: flex;
+    margin-top:30px;
+}
+
+.card .card-social-icons li {
+    padding: 2px;
+}
+
+.card .card-social-icons li a:hover {
+    color: orange;
+}
+
+
+.img-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+    display: none;
+}
+.img-logo img {
+    height: 225px;
+    width: 225px;
+}
+.img-logo hr {
+    width: 90%;
+    color: grey;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+@media screen and (max-width:900px){
+    .contact-container 
+    {
+        width: 90%;
+        height: auto;
+        margin-top: 125px !important; 
+        margin:auto;
+    }
+    .contact-form 
+    {
+        width: 95%;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+    .contact-form h1
+    {
+        margin: 10px auto 25px;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+
+    .contact-form input[type=text],
+    .contact-form input[type=name],
+    .contact-form textarea 
+    {
+        border-bottom: 1px solid grey;
+    }
+    .contact-form textarea 
+    {
+        border: 1px solid grey;
+    }
+    .contact-form label 
+    {
+        font-size: 0.9em;
+    }   
+    .card 
+    {
+        height: auto;
+        width: 90%;
+        top:0;
+        position: relative;
+        margin-left:auto;
+        margin-right: auto;
+        background-color: transparent;
+        background-image:none;
+        box-shadow: none;
+        border-radius:0;
+    }
+    .img-logo
+    {
+        display:flex;
+    }
+    .card h1 {
+        font-size: 1.4em; 
+    }
+    
+    .card .contact-info ul li a
+    {
+        font-size: 0.9em;
+    }  
+    .card-social-icons .fa
+    {
+        font-size: 20px;
+    } 
+    
+}
+
+/* =====CONTACT PAGE END */

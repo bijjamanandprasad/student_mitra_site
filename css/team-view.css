@@ -1,0 +1,101 @@
+
+.card-container{
+    height: auto;
+    width: 100%;
+}
+
+.card-container h1{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 2em;
+}
+.card{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color:#f6f8fd;
+    border-radius: 5px;
+}
+
+.card .card-overlay{
+    height: 400px;
+    width: 330px;
+    margin: 20px 15px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+    
+}
+.card .card-overlay:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.card .card-overlay img{
+    height: 280px;
+    border-radius: 15px 15px 2px 2px;
+    object-fit: cover;
+}
+.card .card-overlay .person-info hr{
+    height: 2px;
+    width: 90%;
+    background-color: grey;
+    margin: 1px auto 5px;
+}
+
+
+.card .card-overlay .person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.card .card-overlay .person-info h2{
+    font-size: 1.4em;
+    font-family: 'Cinzel', serif;
+    color: rgb(8, 19, 36);
+}
+
+.card .card-overlay .person-info p{
+    color: rgb(36, 54, 59);
+    font-size: .9em;
+    font-family: 'Comfortaa', cursive;
+}
+.card .card-overlay .person-info ul{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card .card-overlay .person-info ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.card .card-overlay .person-info .fa{
+    font-size: 20px;
+    color: rgb(17, 16, 16); 
+}
+
+.card .card-overlay .person-info li:hover,
+.card .card-overlay .person-info li:hover .fa{
+    font-size: 20px;
+    color: orange;     
+}
+
+@media only screen and (max-width:600px){
+    .card-container h1{
+        margin-bottom: 25px;
+        font-size: 1.7em;
+    }
+    .card .card-overlay .person-info h2{
+        font-size: 1.2em;
+    }
+}
